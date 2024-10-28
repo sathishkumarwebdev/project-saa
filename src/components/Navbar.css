@@ -1,0 +1,131 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  color: white;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  display: flex;
+}
+.navbar-nav {
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  color: #fff;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar-bg {
+  display: flex;
+  background-color: #fff;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  transition: 0.5s;
+  z-index: 99999;
+  color: var(--dark);
+  font-family: "Playwrite TZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  /* box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo {
+  font-family: "Playwrite TZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.logo-size {
+  font-size: 3rem;
+}
+.nav-logo {
+  text-decoration: none;
+  color: white;
+}
+.logo-box {
+  margin-left: 0.5rem;
+}
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px;
+  list-style: none;
+  margin-right: 3rem;
+}
+.nav-link:hover{
+    color: aqua;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s all;
+  font-weight: 400;
+}
+
+.nav-list:hover {
+  color: var(--primary);
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* .nav-logo img {
+  background-color: var(--primary);
+} */
+
+.nav-logo-bg {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 180px;
+    left: -100%;
+    transition: 0.5s all;
+  }
+
+  .nav-links.active {
+    background: var(--primary);
+    left: 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    /* border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+  }
+
+  .nav-icon {
+    display: flex;
+  }
+}
